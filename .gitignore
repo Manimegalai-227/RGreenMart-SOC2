@@ -1,0 +1,66 @@
+# -----------------------------------------------------------------
+# 1. DEPENDENCIES AND BUILD ARTIFACTS (ALWAYS IGNORE)
+# -----------------------------------------------------------------
+
+# Composer dependencies
+/vendor/
+# Optional: Composer's cache directory (for CI/CD often)
+/var/cache/
+/cache/
+
+# -----------------------------------------------------------------
+# 2. SENSITIVE CONFIGURATION (SECURITY RISK - DO NOT TRACK)
+# -----------------------------------------------------------------
+
+# Environment variable configuration file
+# This is crucial for security as it contains database/SMTP credentials.
+.env
+.env.local
+.env.*.local
+.env.development
+
+*.mp4
+*.zip
+assets/vendor/
+assets/images/
+# Local configuration files that override committed config
+*.local.php
+
+admin/Uploads/
+admin/categoryimages/
+admin/brandimages/
+
+
+# -----------------------------------------------------------------
+# 3. GENERATED OUTPUT FILES AND USER UPLOADS
+# -----------------------------------------------------------------
+
+# Your specific directory for generated PDF bills
+/bills/
+
+# Temporary directories for session files, logs, etc.
+/storage/
+/log/
+/logs/
+/tmp/
+
+# -----------------------------------------------------------------
+# 4. OPERATING SYSTEM & EDITOR FILES (NOISE)
+# -----------------------------------------------------------------
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# JetBrains IDEs (PHPStorm, WebStorm, etc.)
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Vim/Nano swap files
+*~
+*.swp

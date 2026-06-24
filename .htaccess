@@ -1,0 +1,10 @@
+php_flag display_errors On
+php_value error_reporting 32767
+
+
+php_flag display_errors On
+php_value error_reporting 32767
+
+php_value upload_max_filesize 200M
+php_value post_max_size 200M
+php_value max_file_uploads 50
